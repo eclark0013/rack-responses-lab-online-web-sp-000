@@ -8,7 +8,8 @@ class Application
     else
       resp.write "Good Afternoon!"
     end
-
+    req = Rack::Request.new(env)
+    
     resp.finish
   end
 
